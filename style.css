@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #ffc8dd;
+}
+
+body{
+    background-color: var(--color);
+    width: 100%;
+}
+
+.all{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio{
+    display: none;
+}
+
+.press{
+    background-color: #bde0fe !important;
+    transition: 0.5s ease;
+}
+
+.container{
+    position: relative;
+    padding: 50px 20px 10px 20px;
+    border-radius: 20px;
+    background-color: #1f2421;
+}
+
+.containbar{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 10px;
+    width: 400px;
+    /* background-color: #bde0fe; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.containbar i{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.containbar i:nth-child(1){
+    color: #cdb4db;
+}
+
+.containbar i:nth-child(2){
+    color: #ffc8dd;
+}
+
+.containbar i:nth-child(4){
+    color: #ffafcc;
+}
+
+.containbar i:nth-child(5){
+    color: #bde0fe;
+}
+
+.bar{
+
+    width: 200px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.bar i{
+    color: #bde0fe;
+    position: relative;
+}
+
+.white{
+    display: flex;
+    gap: 2px;
+}
+
+.black{
+    display: flex;
+    top: 10px;
+    position: absolute;
+    width: 400px;
+}
+
+.contain{
+    display: flex;
+    gap: 5px;
+    background-color: violet;
+    position: relative;
+}
+
+.white div{
+    height: 100px;
+    width: 30px;
+    background-color: #fdfffc;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+}
+
+.contain div{
+    height: 60px;
+    width: 18px;
+    background-color: #1f2421;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    display: flex;
+    align-items: end;
+    padding: 2px;
+    top: 40px;
+}
+
+.contain div:nth-child(1){
+    position: absolute;
+    left: 22px;
+    background-color: aliceblue;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(2){
+    position: absolute;
+    left: 54px;
+    background-color: sienna;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(3){
+    position: absolute;
+    left: 118px;
+    background-color: sandybrown;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(4){
+    position: absolute;
+    left: 150px;
+    background-color: cadetblue;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(5){
+    position: absolute;
+    left: 182px;
+    background-color: slateblue;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(6){
+    position: absolute;
+    left: 246px;
+    background-color: aliceblue;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(7){
+    position: absolute;
+    left: 278px;
+    background-color: sienna;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(8){
+    position: absolute;
+    left: 342px;
+    background-color: sandybrown;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(9){
+    position: absolute;
+    left: 374px;
+    background-color: cadetblue;
+    background-color: #1f2421;
+}
+
+.contain div:nth-child(10){
+    position: absolute;
+    left: 406px;
+    background-color: slateblue;
+    background-color: #1f2421;
+}
+
+
+@media (max-width: 540px){
+    .containbar{
+        width: 100%;
+    }
+
+    .black{
+        width: auto;
+    }
+    
+    .white div{
+        height: 50px;
+        width: 15px;
+    }
+    .contain div{
+        height: 30px;
+        width: 9px;
+    }
+    .contain div:nth-child(1){
+        position: absolute;
+        left: 12px;
+        background-color: aliceblue;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(2){
+        position: absolute;
+        left: 29px;
+        background-color: sienna;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(3){
+        position: absolute;
+        left: 63px;
+        background-color: sandybrown;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(4){
+        position: absolute;
+        left: 80px;
+        background-color: cadetblue;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(5){
+        position: absolute;
+        left: 97px;
+        background-color: slateblue;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(6){
+        position: absolute;
+        left: 130px;
+        background-color: aliceblue;
+        background-color: #1f2421;
+    }
+    
+    .contain div:nth-child(7){
+        position: absolute;
+        left: 147px;
+        background-color: sienna;
+        background-color: #1f2421;
+    }
+
+    .contain div:nth-child(8){
+        position: absolute;
+        left: 181px;
+        background-color: sienna;
+        background-color: #1f2421;
+    }
+    .contain div:nth-child(9){
+        position: absolute;
+        left: 198px;
+        background-color: sienna;
+        background-color: #1f2421;
+    }
+    .contain div:nth-child(10){
+        position: absolute;
+        left: 215px;
+        background-color: sienna;
+        background-color: #1f2421;
+    }
+}
